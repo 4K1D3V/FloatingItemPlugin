@@ -1,0 +1,14 @@
+name: FloatingItemPlugin
+version: ${project.version}
+main: gg.kite.core.Main
+api-version: 1.21
+author: KiteGG
+description: Advanced floating item system with animations
+commands:
+  floatitem:
+    description: Manage floating items
+    usage: /<command> [create|remove|list|reload|setpattern|move|removeall|help]
+permissions:
+  floatitem.admin:
+    description: Allows full control over floating items
+    default: op

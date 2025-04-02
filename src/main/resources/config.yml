@@ -1,0 +1,55 @@
+animation:
+  # Controls the height of the hover animation (0.0 to 1.0)
+  hover-amplitude: 0.1
+  # Controls the speed of rotation in radians per second (0.0 to 1.0)
+  rotation-speed: 0.05
+  # How often the animation updates in ticks (1 to 20, lower is more frequent)
+  update-frequency: 1
+  # Animation pattern to use by default
+  # Options: SINE (smooth wave), LINEAR (straight line), BOUNCE (bouncing effect)
+  default-pattern: "SINE"
+item:
+  # Height above the spawn location where the item floats (0.5 to 3.0)
+  spawn-height: 1.5
+  # Allowed item types (empty list means all are allowed)
+  allowed-types: []
+effects:
+  # Whether to enable particle effects around floating items
+  particles: false
+  # Type of particle to use (must be a valid Bukkit Particle name)
+  particle-type: "FLAME"
+  # Number of particles to spawn per update (1 to 50)
+  particle-count: 2
+  # Particle effect on interaction
+  interact-particle: "HEART"
+  # Number of interaction particles (1 to 50)
+  interact-particle-count: 5
+sounds:
+  # Sound played on successful actions
+  success: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  # Sound played on errors
+  error: "BLOCK_ANVIL_LAND"
+  # Sound played for info messages
+  info: "BLOCK_NOTE_BLOCK_PLING"
+  # Sound played for warnings
+  warning: "ENTITY_VILLAGER_NO"
+  # Sound played on interaction
+  interact: "ENTITY_ITEM_PICKUP"
+  # Volume for all sounds (0.0 to 2.0)
+  volume: 1.0
+  # Pitch for all sounds (0.5 to 2.0)
+  pitch: 1.0
+interact:
+  # Action when clicking a floating item
+  # Options: NONE, PICKUP, REMOVE, TELEPORT, COMMAND
+  action: "PICKUP"
+  # Command to execute if action is COMMAND (use %player% for player name)
+  command: "say %player% interacted with a floating item"
+worlds:
+  # List of worlds where floating items are allowed (empty means all worlds)
+  allowed-worlds: []
+backup:
+  # Whether to create backups of data.yml before saving
+  enabled: true
+  # Number of backups to keep (1 to 10)
+  max-backups: 5
