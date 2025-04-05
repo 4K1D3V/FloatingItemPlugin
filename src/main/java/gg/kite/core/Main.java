@@ -3,6 +3,7 @@ package gg.kite.core;
 import gg.kite.core.api.FloatingItemManager;
 import gg.kite.core.commands.FloatCommand;
 import gg.kite.core.config.ConfigManager;
+import gg.kite.core.entity.FloatingItem;
 import gg.kite.core.tasks.AnimationTask;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;

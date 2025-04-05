@@ -2,6 +2,7 @@ package gg.kite.core.api;
 
 import gg.kite.core.entity.FloatingItem;
 import org.bukkit.Location;
+import org.bukkit.inventory.ItemStack;
 
 import java.util.Map;
 import java.util.UUID;
@@ -14,4 +15,8 @@ public interface FloatingItemManager {
     void removeAllFloatingItems();
     void setPattern(UUID id, String pattern);
     void moveFloatingItem(UUID id, Location location);
+
+    void loadFloatingItems();
+
+    void saveFloatingItems();
 }

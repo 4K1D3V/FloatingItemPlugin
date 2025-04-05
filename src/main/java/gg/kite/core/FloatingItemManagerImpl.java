@@ -1,6 +1,7 @@
 package gg.kite.core;
 
 import gg.kite.core.api.FloatingItemManager;
+import gg.kite.core.entity.AnimationPattern;
 import gg.kite.core.entity.FloatingItem;
 import gg.kite.core.events.FloatingItemCreateEvent;
 import gg.kite.core.events.FloatingItemRemoveEvent;
